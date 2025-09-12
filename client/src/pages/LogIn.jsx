@@ -8,8 +8,8 @@ export const LogIn = () => {
         <form  class="grid grid-cols-1 gap-1 ">
         
             <label className='text-center text-xl mb-5'>Iniciar Sesión</label>
-            <input class="outline-none border-x-slate-400 text-gray-600 rounded-tl-lg  pl-2 h-10 " type=""placeholder='Nombre de usario'></input>
-            <input class="outline-none  text-gray-600 rounded-br-lg  border-gray-700 pl-2 h-10  " type="password"placeholder='Contraseña'></input>
+            <input class="outline-none border-x-slate-400 border-b text-gray-600 rounded-tl-lg  pl-2 h-10 " type=""placeholder='Nombre de usario'></input>
+            <input class="outline-none  text-gray-600 rounded-br-lg border-b  pl-2 h-10  " type="password"placeholder='Contraseña'></input>
             
             <a className='text-sm mt-4' href='https://tailwindcss.com/docs/align-content#space-between '>Olvidó su contraseña?</a>
             <div className='  grid grid-cols-6 content-between mt-4 space-x-1'>
