@@ -9,7 +9,7 @@ export const Aside = () => {
         Rigoberto Vargas
       </section>
    <section className='h-[40vh] pt- flex flex-col'>
-  Modules
+  Menú
     <ul className='text-left  flex flex-col justify-between gap-y-5 mt-4 pl-5'>
       <li>
         <a href="#" className='flex gap-2'>
@@ -39,7 +39,12 @@ export const Aside = () => {
         </a>
       </li>
 
-      <li><a href='#' className='block'>Informes</a></li>
+      <li>
+        <a href='#' className='flex gap-2'>
+         <img src={img.reportsIcon} alt="" /> 
+         <p href='#' className="block" block>Informes</p>
+        </a>
+      </li>
     </ul>
   </section>
       <section className='h-[40vh] pt-3'>
