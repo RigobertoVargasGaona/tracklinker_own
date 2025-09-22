@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const nav = () => {
+export const Nav = () => {
   return (
-    <div>nav</div>
+    <div>Navegacion</div>
   )
 }
