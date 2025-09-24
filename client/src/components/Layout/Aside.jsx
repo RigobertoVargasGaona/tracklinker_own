@@ -26,11 +26,11 @@ export const Aside = () => {
         </Link>
       </li>
       <li>
-        <a href="#" className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/dashboardIn' className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50' >
            <img className='pl-2' src={img.cardIcon} alt=''></img>
            <p href='#' className='block'>Dashboard</p>
-        </a>
+        </Link>
       </li>
 
       <li>
@@ -42,27 +42,27 @@ export const Aside = () => {
       </li>
 
       <li>
-        <a href='#'  className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/transformacion'  className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
           <img className='pl-2' src={img.transformIcon} alt=''></img>
           <p href='#' className="block" block>Transformación</p>
-        </a>
+        </Link>
        </li>
 
       <li>
-        <a href='#' className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/garantias' className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
           <img className='pl-2' src={img.ticketsIcon} alt="" />
           <p>Garantias</p>
-        </a>
+        </Link>
       </li>
 
       <li>
-        <a href='#' className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/informes' className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
          <img className='pl-2' src={img.reportsIcon} alt="" /> 
-         <p href='#' className="block" block>Informes</p>
-        </a>
+         <p className="block" block>Informes</p>
+        </Link>
       </li>
     </ul>
   </section>
@@ -71,11 +71,11 @@ export const Aside = () => {
           
           
           <li>
-            <a href="#" className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+            <Link to="/ayuda" className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
               <img className='pl-2' src={img.helpIcon} alt=''></img>
-              <p href='#' className='block'>Ayuda</p>
-            </a>
+              <p  className='block'>Ayuda</p>
+            </Link>
           </li>
           <li>
             <Link  to ="/logIn" className='flex gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
