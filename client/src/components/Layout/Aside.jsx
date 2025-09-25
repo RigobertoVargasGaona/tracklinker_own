@@ -6,7 +6,7 @@ import {Link } from 'react-router-dom'
 export const Aside = () => {
   return (
     <div className='h-screen'>
-      <div className='text-center h-screen w-[15vw] bg-slate-200 font-serif text-2xl'>
+      <div className='text-center h-screen xl:w-[200px] w-[120px] bg-slate-200 font-serif text-2xl'>
         
       <section className='h-[20vh] pt-3  flex  items-center  pl-6 pr-6' >
          <Link to="/dashboard" className='flex gap-2  text-slate-500' >
@@ -18,10 +18,10 @@ export const Aside = () => {
   Menú
     <ul className='text-left  flex flex-col  justify-between gap-y-5 mt-4 pl-6 pr-6 '>
       <li>
-        <Link to ='/inventarios' className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to ='/inventarios' className='justify-center flex flex-wrap gap-2 px-3 py-2 shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50' >
-           <img className='pl-2' src={img.inventoryIcon} alt=''></img>
-           <p  className='block'>Inventarios</p>
+           <img className='' src={img.inventoryIcon} alt=''></img>
+           <p  className='hidden  xl:block'>Inventarios</p>
             
         </Link>
       </li>
@@ -29,7 +29,7 @@ export const Aside = () => {
         <Link to='/dashboardIn' className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50' >
            <img className='pl-2' src={img.cardIcon} alt=''></img>
-           <p  className='block'>Dashboard</p>
+           <p  className='hidden  xl:block'>Dashboard</p>
         </Link>
       </li>
 
@@ -37,7 +37,7 @@ export const Aside = () => {
         <Link  to ='/users'  className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
             <img className='pl-2' src={img.usersIcon} alt=''></img>
-            <p  className='block'>Usuarios</p>
+            <p  className='hidden  xl:block'>Usuarios</p>
         </Link>
       </li>
 
@@ -45,7 +45,7 @@ export const Aside = () => {
         <Link to='/transformacion'  className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
           <img className='pl-2' src={img.transformIcon} alt=''></img>
-          <p  className="block" block>Transformación</p>
+          <p  className='hidden  xl:block' block>Transformación</p>
         </Link>
        </li>
 
@@ -53,7 +53,7 @@ export const Aside = () => {
         <Link to='/garantias' className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
           <img className='pl-2' src={img.ticketsIcon} alt="" />
-          <p>Garantias</p>
+          <p className='hidden  xl:block'>Garantias</p>
         </Link>
       </li>
 
@@ -61,7 +61,7 @@ export const Aside = () => {
         <Link to='/informes' className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
          <img className='pl-2' src={img.reportsIcon} alt="" /> 
-         <p className="block" block>Informes</p>
+         <p className='hidden  xl:block' block>Informes</p>
         </Link>
       </li>
     </ul>
@@ -74,14 +74,14 @@ export const Aside = () => {
             <Link to="/ayuda" className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
               <img className='pl-2' src={img.helpIcon} alt=''></img>
-              <p  className='block'>Ayuda</p>
+              <p  className='hidden  xl:block'>Ayuda</p>
             </Link>
           </li>
           <li>
             <Link  to ="/logIn" className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
               <img className='pl-2' src={img.logoutIcon} alt=''></img>
-              <p  className='block'>Salir</p>
+              <p  className='hidden  xl:block'>Salir</p>
             </Link>
           </li>
 
