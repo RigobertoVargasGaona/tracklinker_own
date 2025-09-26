@@ -11,14 +11,14 @@ export const Aside = () => {
       <section className='h-[20vh] pt-3  flex  items-center  pl-6 pr-6' >
          <Link to="/dashboard" className='flex gap-2  text-slate-500' >
             <img className=' w-16' src={img.userIcon} alt=''></img>
-            <p href='#' className='text-left text-wrap'>Rigoberto Vargas Gaona</p>
+            <p href='#' className='text-left text-wrap hidden  xl:block'>Rigoberto Vargas Gaona</p>
            </Link>
       </section>
    <section className='h-[50vh] pt- flex flex-col'>
   Menú
     <ul className='text-left  flex flex-col  justify-between gap-y-5 mt-4 pl-6 pr-6 '>
       <li>
-        <Link to ='/inventarios' className='justify-center flex flex-wrap gap-2 px-3 py-2 shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to ='/inventarios' className=' flex flex-wrap justify-center gap-2 px-3 py-2 shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50' >
            <img className='' src={img.inventoryIcon} alt=''></img>
            <p  className='hidden  xl:block'>Inventarios</p>
@@ -26,41 +26,50 @@ export const Aside = () => {
         </Link>
       </li>
       <li>
-        <Link to='/dashboardIn' className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/dashboardIn' className=' flex flex-wrap justify-center gap-2 px-3 py-2  shadow-sm text-slate-500 rounded-lg
+        xl:justify-start
+        hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50' >
-           <img className='pl-2' src={img.cardIcon} alt=''></img>
+           <img className='' src={img.cardIcon} alt=''></img>
            <p  className='hidden  xl:block'>Dashboard</p>
         </Link>
       </li>
 
       <li>
-        <Link  to ='/users'  className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
-           hover:shadow-cyan-500/50'>
-            <img className='pl-2' src={img.usersIcon} alt=''></img>
+        <Link  to ='/users'  className='flex flex-wrap justify-center gap-2 px-3 py-2  shadow-sm text-slate-500 rounded-lg
+        xl:justify-start
+        hover:bg-cyan-500 hover:shadow-xl hover:text-white hover:shadow-cyan-500/50'>
+            <img className='' src={img.usersIcon} alt=''></img>
             <p  className='hidden  xl:block'>Usuarios</p>
         </Link>
       </li>
 
       <li>
-        <Link to='/transformacion'  className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/transformacion'  className='flex flex-wrap justify-center gap-2 px-3 py-2  shadow-sm text-slate-500 rounded-lg
+        xl:justify-start
+        hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
-          <img className='pl-2' src={img.transformIcon} alt=''></img>
+          <img className='' src={img.transformIcon} alt=''></img>
           <p  className='hidden  xl:block' block>Transformación</p>
         </Link>
        </li>
 
       <li>
-        <Link to='/garantias' className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/garantias' className='flex flex-wrap justify-center gap-2 px-3 py-2  shadow-sm
+        xl:justify-start
+        text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
-          <img className='pl-2' src={img.ticketsIcon} alt="" />
+          <img className='' src={img.ticketsIcon} alt="" />
           <p className='hidden  xl:block'>Garantias</p>
         </Link>
       </li>
 
       <li>
-        <Link to='/informes' className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+        <Link to='/informes' className='flex flex-wrap justify-center gap-2 px-3 py-2  shadow-sm 
+        xl:justify-start
+        text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
-         <img className='pl-2' src={img.reportsIcon} alt="" /> 
+         <img className='' src={img.reportsIcon} alt="" /> 
          <p className='hidden  xl:block' block>Informes</p>
         </Link>
       </li>
@@ -71,16 +80,20 @@ export const Aside = () => {
           
           
           <li>
-            <Link to="/ayuda" className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+            <Link to="/ayuda" className='flex flex-wrap justify-center gap-2 px-3 py-2  shadow-sm
+            xl:justify-start
+            text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
-              <img className='pl-2' src={img.helpIcon} alt=''></img>
+              <img className='' src={img.helpIcon} alt=''></img>
               <p  className='hidden  xl:block'>Ayuda</p>
             </Link>
           </li>
           <li>
-            <Link  to ="/logIn" className='flex flex-wrap gap-2  shadow-sm text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
+            <Link  to ="/logIn" className='flex flex-wrap justify-center gap-2 px-3 py-2  shadow-sm
+            xl:justify-start
+            text-slate-500 rounded-lg hover:bg-cyan-500 hover:shadow-xl hover:text-white
            hover:shadow-cyan-500/50'>
-              <img className='pl-2' src={img.logoutIcon} alt=''></img>
+              <img className='' src={img.logoutIcon} alt=''></img>
               <p  className='hidden  xl:block'>Salir</p>
             </Link>
           </li>

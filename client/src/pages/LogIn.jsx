@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './login.css';
 
 export const LogIn = () => {
   return (
@@ -9,8 +10,12 @@ export const LogIn = () => {
         <form  class="grid grid-cols-1 gap-1 ">
         
             <label className='text-center text-xl mb-5'>Iniciar Sesión</label>
-            <input class="outline-none border-x-slate-400 border-b text-gray-600 rounded-tl-lg  pl-2 h-10 " type=""placeholder='Nombre de usario'></input>
-            <input class="outline-none  text-gray-600 rounded-br-lg border-b  pl-2 h-10  " type="password"placeholder='Contraseña'></input>
+            <div className='relative w-56'>
+              <input class="outline-none border-x-slate-400 border-b text-slate-500 rounded-tl-lg  pl-2 h-10 " type=" " placeholder='' id='user'></input>
+              <label htmlFor="user" className='absolute top-3 right-40 transition-all duration-700'>Usuario</label>
+            </div>
+
+            <input class="outline-none  text-gray-600 rounded-br-lg border-b  pl-2 h-10 " type="password"placeholder='Contraseña'></input>
             <a  className='text-sm mt-4' href='https://tailwindcss.com/docs/align-content#space-between '>Olvidó su contraseña?</a>
             <div className='  grid grid-cols-6 content-between mt-4 space-x-1'>
                 <Link to="/Dashboard" class=" px-4 py-1 border-solid md:border-dotted col-span-3 bg-sky-500 hover:bg-sky-700 rounded-md text-white  ">Ingresar</Link>
