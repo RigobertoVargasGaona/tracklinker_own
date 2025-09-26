@@ -9,9 +9,10 @@ export const Dashboard = () => {
     
       <div className='flex '>
         <Aside />
-        <div>
+        <div className='w-[80vw] '>
           <Nav />
           <Main />
+          
         </div>
       </div>
   

@@ -4,8 +4,9 @@ import {img} from '../../assets/img.js';
 
 export const Main = () => {
   return (
-    <div className='mx-10  px-32 w-[80vw] h-[93vh]  ' >
-      <div className='p-60 justify-between gap-10 flex flex-wrap text-center '>
+   
+    <div className='h-[93vh] w-[80vw] flex justify-center items-center ' >
+      <div className='w-[40vw] justify-between gap-10 flex flex-wrap text-center '>
         <div>
         <Link to ='/inventarios'>
             <div className=' h-36 w-36 rounded-md shadow-sm shadow-slate-400 hover:bg-cyan-500 hover:shadow-xl hover:text-white
@@ -98,5 +99,6 @@ export const Main = () => {
         
       </div>     
     </div>
+   
   );
 };

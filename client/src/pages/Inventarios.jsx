@@ -58,7 +58,7 @@ export const Inventarios = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="flex w-[100vw] bg-white gap-10 rounded-lg shadow-xl">
+    <div className="flex w-[100vw] h-[100vh] bg-white gap-10 rounded-lg shadow-xl">
       <Aside />
       <div>
         <Nav />
