@@ -1,14 +1,19 @@
-import React, { useState, useEffect } from 'react';
+
+import React, {useEffect, useState  } from 'react';
 import { supabase } from '../supabaseClient'; // Importa el cliente configurado
 import {img} from '../assets/img.js';
 import { Aside } from '../components/Layout/Aside.jsx';
 import { Nav } from '../components/Layout/Nav.jsx';
-import { Link } from 'react-router-dom';
+import  Modal  from '../components/Modals/Modal'; 
 
 export const Users = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // 1. EL ESTADO DEL MODAL AHORA VIVE AQUÍ
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -31,30 +36,51 @@ export const Users = () => {
         setLoading(false);
       }
     };
-
     fetchUsers();
-  }, []); // El array vacío de dependencias asegura que el efecto se ejecute solo una vez al montar
-/*
-  if (loading) {
-    return <div>Cargando usuarios...</div>;
-  }
-*/
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
+      }, []); // El array vacío de dependencias asegura que el efecto se ejecute solo una vez al montar
+    /*
+      if (loading) {
+        return <div>Cargando usuarios...</div>;
+      }
+    */
+    if (error) {
+      return <div>Error: {error}</div>;
+    }
+
+
+  // Función para alternar el estado (abrir/cerrar)
+  const toggleModal = () => {
+    setIsModalOpen(prev => !prev);
+  };
 
   return (
   <div className="flex w-[100vw] bg-white gap-10  rounded-lg shadow-xl">
+    
    <Aside/> 
     <div>
       <Nav/>
       <h2 className="text-2xl font-bold mb-4 text-gray-800 text-center">Registros de Usuarios</h2>
-      <Link to='/modal'>
-      <button className='h-50 p-2 rounded-lg m-4 bg-[#0eb60e] text-[#555855] hover:bg-[#1b801b] hover:text-white hover:shadow-cyan-500/50'>Agregar Usuario</button>
-      </Link >
+      
+      <button className="h-50 p-2 rounded-lg m-4 bg-[#0eb60e] text-[#555855] hover:bg-[#1b801b] hover:text-white hover:shadow-cyan-500/50"
+        onClick={toggleModal}
+         
+      >
+        {isModalOpen ? 'Agregando Usuario' : 'Agregar Usuario'}
+      </button>
+
+      {/* 3. PASAR EL ESTADO Y LA FUNCIÓN COMO PROPS AL MODAL */}
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={toggleModal} // Opcional, pero útil para que el modal se cierre a sí mismo
+      />
+
+
+
+
+
         <div className="overflow-y-auto h-[70vh] w-[80vw]">
         <table className="min-w-full divide-y divide-rose-100">
-          <thead className="sticky top-0 bg-gray-50"> {/*  'sticky top-0' to keep the header visible */}
+          <thead className=" top-0 bg-gray-50"> {/*  'sticky top-0' to keep the header visible */}
             <tr>
               <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
               Activo
