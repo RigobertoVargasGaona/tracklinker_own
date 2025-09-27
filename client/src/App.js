@@ -10,6 +10,7 @@ import { Garantias } from './pages/Garantias';
 import { Informes } from './pages/Informes';
 import { Ayuda } from './pages/Ayuda';
 import { Salir } from './pages/Salir';
+import  Modal  from './components/Modals/Modal'; 
 
 
 
@@ -31,6 +32,8 @@ function App() {
         <Route  path='/informes' element={<Informes />}/>
         <Route  path='/ayuda' element={<Ayuda />}/>
         <Route  path='/salir' element={<Salir />}/>
+        <Route  path='/modal' element={<Modal />}/>
+      
       </Routes>
     </BrowserRouter>
     

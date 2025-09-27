@@ -3,6 +3,7 @@ import { supabase } from '../supabaseClient'; // Importa el cliente configurado
 import {img} from '../assets/img.js';
 import { Aside } from '../components/Layout/Aside.jsx';
 import { Nav } from '../components/Layout/Nav.jsx';
+import { Link } from 'react-router-dom';
 
 export const Users = () => {
   const [users, setUsers] = useState([]);
@@ -48,7 +49,9 @@ export const Users = () => {
     <div>
       <Nav/>
       <h2 className="text-2xl font-bold mb-4 text-gray-800 text-center">Registros de Usuarios</h2>
+      <Link to='/modal'>
       <button className='h-50 p-2 rounded-lg m-4 bg-[#0eb60e] text-[#555855] hover:bg-[#1b801b] hover:text-white hover:shadow-cyan-500/50'>Agregar Usuario</button>
+      </Link >
         <div className="overflow-y-auto h-[70vh] w-[80vw]">
         <table className="min-w-full divide-y divide-rose-100">
           <thead className="sticky top-0 bg-gray-50"> {/*  'sticky top-0' to keep the header visible */}

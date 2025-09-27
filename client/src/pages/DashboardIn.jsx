@@ -10,16 +10,16 @@ export const DashboardIn = () => {
           <div className='flex flex-wrap' >
             <Nav />
             <div className='  wrap h-[93vh] p-4 w-[80vw] grid grid-cols-10 grid-rows-6 gap-3'>
-              <div  class=" shadow-sm  shadow-slate-400 col-span-2 rounded-xl row-span-2"></div>
-              <div class="  shadow-sm  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
-              <div class="  shadow-sm  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
-              <div class="  shadow-sm  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
-              <div class="  shadow-sm  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
-              <div className=' shadow-sm  shadow-slate-400  rounded-xl col-span-4 row-span-2'></div>
-              <div className=' shadow-sm  shadow-slate-400  rounded-xl col-span-3 row-span-2 '></div>
-              <div className=' shadow-sm  shadow-slate-400  rounded-xl col-span-3 row-span-4 '></div>
-              <div className=' shadow-sm  shadow-slate-400  rounded-xl col-span-4 row-span-2'></div>
-              <div className=' shadow-sm  shadow-slate-400  rounded-xl col-span-3 row-span-2 '></div>
+              <div  class=" shadow-lg  shadow-slate-400 col-span-2 rounded-xl row-span-2"></div>
+              <div class="  shadow-lg  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
+              <div class="  shadow-lg  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
+              <div class="  shadow-lg  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
+              <div class="  shadow-lg  shadow-slate-400  col-span-2 rounded-xl row-span-2"></div>
+              <div className=' shadow-lg  shadow-slate-400  rounded-xl col-span-4 row-span-2'></div>
+              <div className=' shadow-lg  shadow-slate-400  rounded-xl col-span-3 row-span-2 '></div>
+              <div className=' shadow-lg  shadow-slate-400  rounded-xl col-span-3 row-span-4 '></div>
+              <div className=' shadow-lg  shadow-slate-400  rounded-xl col-span-4 row-span-2'></div>
+              <div className=' shadow-lg  shadow-slate-400  rounded-xl col-span-3 row-span-2 '></div>
             </div>
           </div>
       </div>
