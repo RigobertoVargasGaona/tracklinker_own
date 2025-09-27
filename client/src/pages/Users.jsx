@@ -4,7 +4,8 @@ import { supabase } from '../supabaseClient'; // Importa el cliente configurado
 import {img} from '../assets/img.js';
 import { Aside } from '../components/Layout/Aside.jsx';
 import { Nav } from '../components/Layout/Nav.jsx';
-import  Modal  from '../components/Modals/Modal'; 
+import  Modal  from '../components/Modals/Modal';
+import { Input } from '../components/Modals/Input.jsx'; 
 
 export const Users = () => {
   const [users, setUsers] = useState([]);
@@ -69,14 +70,77 @@ export const Users = () => {
       </button>
 
       {/* 3. PASAR EL ESTADO Y LA FUNCIÓN COMO PROPS AL MODAL */}
-      <Modal 
+      <Modal
         isOpen={isModalOpen} 
         onClose={toggleModal} // Opcional, pero útil para que el modal se cierre a sí mismo
-      />
+      >
+        <div className=' flex flex-col gap-7'>
+
+          <select className='h-12 outline-none p-2 border rounded-md' name="" id="" >
+            <option value="Administrador">Administrador</option>
+            <option value="Tecnico">Técnico</option>
+            <option value="Almacen">Almacén</option>
+            <option value="Cliente">Administrador</option>
+          </select>
+          <div className="relative w-full mb-6">
+          <Input
+          name={"nombre"}
+          placeholder={"Nombre"}
+          labelText={"Nombre"}
+          id={""}
+          
+          />
+          <Input
+          name={"apellido1"}
+          placeholder={"apellido1"}
+          labelText={"Primer Apellido"}
+          id={""}
+
+          />
+          <Input
+          name={"apellido2"}
+          placeholder={"apellido2"}
+          labelText={"Segundo Apellido"}
+          id={""}
+
+          />
+          <Input
+          name={"telefono"}
+          placeholder={"telefono"}
+          labelText={"Teléfono"}
+          id={""}
+
+          />
+          <Input
+          type={'email'}
+          name={"email"}
+          placeholder={"email"}
+          labelText={"Email"}
+          id={""}
+
+          />
+          <Input
+          name={"address"}
+          placeholder={"Dirección"}
+          labelText={"Dirección"}
+          id={""}
+
+          />
+          <Input
+          type={'password'}
+          name={"password"}
+          placeholder={"Contraseña"}
+          labelText={"Contraseña"}
+          id={""}
+
+          />
 
 
 
-
+          
+        </div>
+      </div> 
+      </Modal>
 
         <div className="overflow-y-auto h-[70vh] w-[80vw]">
         <table className="min-w-full divide-y divide-rose-100">

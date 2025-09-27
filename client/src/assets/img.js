@@ -10,6 +10,7 @@ import cardIcon from './icon/card_icon.svg';
 import userIcon from './icon/user_icon.svg';
 import deleteIcon from './icon/delete_icon.svg';
 import editIcon from './icon/edit_icon.svg';
+import closetIcon from './icon/close_icon.svg';
 
 export const img = {
     inventoryIcon,
@@ -23,4 +24,5 @@ export const img = {
     userIcon,
     deleteIcon,
     editIcon,
+    closetIcon,
 }
